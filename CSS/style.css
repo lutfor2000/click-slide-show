@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    outline: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+ul li a:hover{
+    color: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: none;
+}
+
+body {
+    background: #b8abab;
+}
+
+.clr{
+   clear: both;
+}
+.nav-bg-color{
+   background: #070707;
+   opacity: 70%;
+}
+.drop_bg{
+    background: #070707;
+    opacity: 70%;  
+}
+.tog-botton{
+    color: aliceblue;
+    border: 5px solid wheat;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar-nav li a {
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(236, 238, 240);
+    transition: 1s all;
+}
+
+.navbar-nav li a:hover{
+    color: rgba(6, 240, 76, 0.962);
+}
+.mar_left{
+    margin-left: auto;
+    padding-right: 100px;
+
+}
+
+/* <==============head End============> */
+.slide_item{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    display: none;
+    animation: zoom 1s ease ;
+}
+@keyframes zoom{
+     0%{transform: scale(1);opacity: 1;}
+     50%{transform: scale(2);opacity: 1;}
+     100%{transform: scale(1);opacity: 1;}
+}
+.active_disp{
+    display: block;
+}
+#Banner{
+    position: relative;
+    overflow: hidden;
+}
+#Banner .left_btn, #Banner .right_btn{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #f00404;
+    border-radius: 50%;
+    font-size: 24px;
+    top: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-top: -20px;
+    cursor: pointer;
+    color: white;
+    opacity: 90%;
+    transition: all 1s ease;
+   
+}
+#Banner .left_btn:hover, #Banner .right_btn:hover{
+background: #07f503d7;
+box-shadow: 0px 0px 10px 3px white;
+}
+#Banner .left_btn{
+    left : 100px;
+}
+#Banner .right_btn{
+    right: 100px;
+}
